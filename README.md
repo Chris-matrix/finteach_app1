@@ -72,16 +72,3 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Citations:
-[1] https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide/
-[2] https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-mysql
-[3] https://hackernoon.com/5-professional-tips-for-crafting-a-winning-readme
-[4] https://www.w3schools.com/nodejs/nodejs_mysql.asp
-[5] https://www.makeareadme.com
-[6] https://blogs.perficient.com/2023/08/03/how-to-connect-node-js-with-mysql-database/
-[7] https://dev.to/documatic/how-to-write-an-awesome-readme-cfl
