@@ -1,6 +1,8 @@
-const { Sequelize } = require('sequelize');
-require('dotenv').config();  // Load environment variables from .env file
+//const { Sequelize } = require('sequelize');
+//require('dotenv').config();  // Load environment variables from .env file
+import Sequelize from 'sequelize';
 
+import "dotenv/config";
 // Create a new Sequelize instance and configure the connection
 const sequelize = new Sequelize(
   process.env.DB_NAME, // Database name
@@ -12,14 +14,4 @@ const sequelize = new Sequelize(
     port: process.env.DB_PORT, // Port (default is 3306 for MySQL)
   }
 );
-
-// Test the database connection
-sequelize.authenticate()
-  .then(() => {
-    console.log('Database connection successful!');
-  })
-  .catch((err) => {
-    console.error('Unable to connect to the database:', err);
-  });
-
-module.exports = sequelize;
+export default sequelize;

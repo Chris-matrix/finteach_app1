@@ -13,11 +13,8 @@ try {
   await User.sync();
   await Transaction.sync();
 
-  console.log('Database synchronized')
+console.log('Database synchronized')
 
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`); // Use backticks for string interpolation
-});
 
 } catch (error) {
   console.error('Error connecting to the database:', error);
