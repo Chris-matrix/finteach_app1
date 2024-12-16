@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+header {
+    background-color: #1e90ff; /* Dodger blue header */
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4169e1; /* Royal blue for hover */
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.account-balance, .quick-transaction {
+    border: 1px solid #87cefa; /* Light sky blue border */
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    background-color: #fff; /* White background for contrast */
+}
+
+.quick-transaction form {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-transaction label {
+    margin-bottom: 5px;
+    color: #4682b4; /* Steel blue text */
+}
+
+.quick-transaction input, .quick-transaction textarea {
+    padding: 10px;
+    border: 1px solid #87cefa; /* Light sky blue border */
+    border-radius: 5px;
+}
+
+.quick-transaction button {
+    padding: 10px 20px;
+    background-color: #1e90ff; /* Dodger blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quick-transaction button:hover {
+    background-color: #4169e1; /* Royal blue for button hover */
+}

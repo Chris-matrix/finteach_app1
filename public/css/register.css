@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --error-color: #e74c3c;
+    --success-color: #2ecc71;
+}
+
+body {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: var(--text-color);
+}
+
+.register-container {
+    background-color: rgba(236, 240, 241, 0.9);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+input:focus {
+    border-bottom-color: var(--primary-color);
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.back-button a {
+    color: var(--primary-color);
+}
+
+.back-button a:hover {
+    color: #2980b9;
+}
+
+footer {
+    color: var(--secondary-color);
+}
