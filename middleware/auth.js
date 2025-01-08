@@ -8,7 +8,7 @@ export const authenticateToken = (req, res, next) => {
     }
 
     try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET || '01fbfe464668cadd163d181351b13ff3f71b1a17282e505f63a52447c99dfa4d');
+        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your token here');
         req.userId = decoded.userId;
         
         console.log('Authenticated user ID:', req.userId);
